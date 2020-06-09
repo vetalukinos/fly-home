@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fly</title>
+    <link href="css/bootstrap-select.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/intlTelInput.css" type="text/css" rel="stylesheet"/>
+    <link href="css/slick.css" type="text/css" rel="stylesheet"/>
+    <link href="scss/home.css" type="text/css" rel="stylesheet"/>
+    <link href="scss/main.css" type="text/css" rel="stylesheet"/>
+    <link href="scss/adaptive.css" type="text/css" rel="stylesheet"/>
+</head>
+<body class="home-2">
+
+<div class="page-wrapper" style="background: url('images/home_2.png'); background-size: cover">
+
+    <!--Adaptive Menu-->
+    <div class="container adaptive-menu-wrapper">
+        <div class="row">
+            <div class="col adaptive-menu">
+                <div class="menu-title"><img src="images/menu_title.png">Menu</div>
+                <ul class="menu-list">
+                    <li><a href="#"><img src="images/menu_search.png">Search flights</a></li>
+                    <li><a href="#"><img src="images/menu_booking.png">My booking</a></li>
+                    <li><a href="#"><img src="images/menu_title.png">Travelers</a></li>
+                    <li><a href="#"><img src="images/menu_search.png">Recent search</a></li>
+                    <li><a href="#"><img src="images/menu_booking.png">FAQ</a></li>
+                    <li class="contacts">
+                        <a href="#"><img src="images/menu_title.png">Contacts</a>
+                        <span><a href="tel:+91120488777">+91-120-4887777</a>(24/7)</span>
+                    </li>
+                </ul>
+                <div class="user-block">
+                    <span><img src="images/menu_user.png">Jordan Hunt</span>
+                    <a href="#">Accout settings</a>
+                    <a href="#">Logout</a>
+                </div>
+                <div class="select-your-language" data-toggle="modal" data-target="#select-your-language">Select your language</div>
+                <div class="view-block">View full version</div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window with Language and Currency-->
+    <div class="modal fade" id="select-your-language" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-title" id="exampleModalLabel">Select your language and currency</div>
+                <form>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="en">English</option>
+                            <option value="in">India</option>
+                            <option value="om">Oman</option>
+                            <option value="qa">Qatar</option>
+                            <option value="bh">Bahrain</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="usd">USD - $</option>
+                            <option value="inr">INR - ₹</option>
+                            <option value="jpy">JPY - ¥</option>
+                            <option value="aud">AUD - $</option>
+                        </select>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-primary modal-select"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container header clearfix">
+        <div class="row">
+            <div class="col header-left">
+                <div class="row">
+                    <div class="col-xxl col-xl-5 col-lg col-md">
+                        <a href="#" class="header-logo"><img src="images/logo.png"/><span>CheapTicket.in</span></a>
+                        <a href="#" class="header-arrow-icon"><img src="images/header_arrow_icon.png"/></a>
+                    </div>
+                    <div class="col-xxl col-xl-7 col-lg-auto col-md-auto">
+                        <div class="header-phone">
+                            <a href="tel:+91120488777"><span class="phone-icon"></span>+91-120-4887777</a>
+                            <span>- 24/7</span>
+                        </div>
+                        <a href="#" class="menu-adaptive-icon"><img src="images/menu_adaptive_icon.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto header-right">
+                <div class="header-right-country">
+                    <select id="choice-country">
+                        <option value="en">English</option>
+                        <option value="in">India</option>
+                        <option value="om">Oman</option>
+                        <option value="qa">Qatar</option>
+                        <option value="bh">Bahrain</option>
+                    </select>
+                    <a href="#" class="header-right-country-default"><img src="images/flags/english.png"><span>English(US)</span></a>
+                    <ul class="header-right-country-toggle">
+                        <li class="active"><a href="#" data-country="en"><img src="images/flags/english.png"><span>English(US)</span></a></li>
+                        <li><a href="#" data-country="in"><img src="images/flags/india.png"><span>India</span></a></li>
+                        <li><a href="#" data-country="om"><img src="images/flags/oman.png"><span>Oman</span></a></li>
+                        <li><a href="#" data-country="qa"><img src="images/flags/qatar.png"><span>Qatar</span></a></li>
+                        <li><a href="#" data-country="bh"><img src="images/flags/bahrain.png"><span>Bahrain</span></a></li>
+                    </ul>
+                </div>
+                <div class="header-right-currency">
+                    <select id="choice-currency">
+                        <option value="usd">USD - $</option>
+                        <option value="inr">INR - ₹</option>
+                        <option value="jpy">JPY - ¥</option>
+                        <option value="aud">AUD - $</option>
+                    </select>
+                    <a href="#" class="header-right-currency-default">USD - $</a>
+                    <ul class="header-right-currency-toggle">
+                        <li class="active"><a href="#">USD - $</a></li>
+                        <li><a href="#">INR - ₹</a></li>
+                        <li><a href="#">JPY - ¥</a></li>
+                        <li><a href="#">AUD - $</a></li>
+                    </ul>
+                </div>
+                <div class="header-right-manage">
+                    <a href="#">Manage bookings</a>
+                </div>
+                <div class="header-right-sign-up"><a href="#"><span></span>Sign up</a></div>
+                <div class="header-right-login"><a href="#"><span></span>Login</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main-page-content clearfix">
+        <div class="row">
+            <div class="col title-info">
+                <h1>Pay Less, Fly More</h1>
+                <div class="title-info-span">Lowest Prices and 100% secure!</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xxl-9 col-xl-10 left-side">
+                <div class="row">
+                    <div class="col-xxl-1 col-xl-1 col-lg-1 d-lg-block d-md-none">
+                        <a class="black-plane" href="#"><img src="images/black-plane.png" /></a>
+                    </div>
+                    <form class="col-xxl-11 col-xl-11 col-lg-11 col-md-12 form-search">
+                        <fieldset class="form-group button-options">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input tab-option" name="optionsRadios" id="radio-multi-1" value="option1" data-tab="form-tab-1" checked>
+                                <label for="radio-multi-1" class="form-check-label"><span>One way</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input tab-option" name="optionsRadios" id="radio-multi-2" value="option2" data-tab="form-tab-2">
+                                <label for="radio-multi-2" class="form-check-label"><span>Round trip</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input tab-option" name="optionsRadios" id="radio-multi-3" value="option3" data-tab="form-tab-3">
+                                <label for="radio-multi-3" class="form-check-label"><span>Multi city</span></label>
+                            </div>
+                        </fieldset>
+                        <div class="form-row block-1">
+                            <div class="col-xxl col-xl col-lg col-md-12">
+                                <label for="from-select-one-way">From</label>
+                                <select class="form-control selectpicker" id="from-select-one-way" data-live-search="true">
+                                    <option>New Delhi (DEL)</option>
+                                    <option>New Delhi (DEL)</option>
+                                    <option>New Delhi (DEL)</option>
+                                    <option>New Delhi (DEL)</option>
+                                    <option>New Delhi (DEL)</option>
+                                </select>
+                            </div>
+                            <div class="col-xxl col-xl col-lg col-md-12">
+                                <label for="to-select-one-way">To</label>
+                                <select class="form-control selectpicker" id="to-select-one-way" data-live-search="true">
+                                    <option>Mumbai (BOM)</option>
+                                    <option>Mumbai (BOM)</option>
+                                    <option>Mumbai (BOM)</option>
+                                    <option>Mumbai (BOM)</option>
+                                    <option>Mumbai (BOM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row block-2">
+                            <div class="col-xxl col-xl col-lg-6">
+                                <div class="form-group">
+                                    <label for="depart-on-one-way">Depart on</label>
+                                    <div class="input-group date" id="date-one-way-1">
+                                        <input type="text" id="depart-on-one-way" class="form-control"/>
+                                        <span class="input-group-addon"><img src="images/calendar.png"/></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl col-xl col-lg-6 d-lg-block d-md-none">
+                                <div class="form-group">
+                                    <label for="return-on-one-way" class="disabled">Return on</label>
+                                    <div class="input-group date" id="date-one-way-2">
+                                        <input type="text" id="return-on-one-way" class="form-control" disabled />
+                                        <span class="input-group-addon"><img src="images/calendar.png"/></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-12">
+                                <label for="choose-options-one-way">Passengers/Class</label>
+                                <button class="btn dropdown-toggle choose-options" id="choose-options-one-way" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="choose-options-one-way">1 Passenger, Economy</div>
+                                </button>
+                                <div class="dropdown-menu options">
+                                    <div class="title-option">Travellers</div>
+                                    <div class="number">
+                                        <span class="title-age">Adult (12+ yr)</span>
+                                        <span class="minus">-</span>
+                                        <input id="adult-one-way" type="text" value="1" size="5"/>
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <div class="number">
+                                        <span class="title-age">Child (2-11 yr)</span>
+                                        <span class="minus">-</span>
+                                        <input id="child-one-way" type="text" value="0" size="5"/>
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <div class="number">
+                                        <span class="title-age">Infant (0-2 yr)</span>
+                                        <span class="minus">-</span>
+                                        <input id="infant-one-way" type="text" value="0" size="5"/>
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <div class="title-option">Class</div>
+                                    <div class="form-check">
+                                        <input class="form-check-input class-option" type="radio" name="exampleRadios" id="economy-option-one-way" value="Economy" checked>
+                                        <label class="form-check-label" for="economy-option-one-way">Economy</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input class-option" type="radio" name="exampleRadios" id="business-option-one-way" value="Business">
+                                        <label class="form-check-label" for="business-option-one-way">Business</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input class-option" type="radio" name="exampleRadios" id="premium-economy-option-one-way" value="Premium Economy">
+                                        <label class="form-check-label" for="premium-economy-option-one-way">Premium Economy</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row block-3">
+                            <div class="col-xxl-3 col-xl-3 col-lg-6">
+                                <button type="submit" class="btn btn-primary search">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-2 right-side">
+                <div class="row">
+                    <div class="col">
+                        <span>Quick tools</span>
+                        <ul>
+                            <li><a href="#">Booking</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bottom-content clearfix">
+        <div class="row justify-content-start bottom-menu">
+            <div class="col-9">
+                <ul>
+                    <li><a href="#">Home |</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us |</a></li>
+                    <li><a href="#">Booking Guidelines |</a></li>
+                    <li><a href="#">Payment |</a></li>
+                    <li><a href="#">Flight Changes |</a></li>
+                    <li><a href="#">Terms of Services |</a></li>
+                    <li><a href="#">Travel Advisory |</a></li>
+                    <li><a href="#">Visa |</a></li>
+                    <li><a href="#">FAQ |</a></li>
+                    <li><a href="#">Affiliations |</a></li>
+                    <li><a href="#">Privacy Policy |</a></li>
+                    <li><a href="#">Great Deals |</a></li>
+                    <li><a href="#">Activities</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container footer">
+    <div class="row">
+        <div class="col-xxl col-xl-8 col-lg-6">
+            <div class="row">
+                <div class="col security">
+                    <img src="images/verified-protection.png"/><span>100% <a href="#">Security</a> Payments</span>
+                </div>
+                <div class="col partners-bottom">
+                    <img src="images/partners_bottom.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl col-xl-4 col-lg-6 copyright">© 2017 Cheapticket.in - All Rights Reserved</div>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/intlTelInput.min.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/i18n/defaults-en_US.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

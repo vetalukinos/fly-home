@@ -1,0 +1,458 @@
+@media (max-width: 1919px) {
+  body {
+    font-size: 12px;
+    line-height: 14px; }
+
+  .container {
+    max-width: 1280px; }
+
+  /*Right Side*/
+  .right-side {
+    /*Profile Title*/
+    /*Profile User*/
+    /*Profile Edit*/
+    /*Add Travelers */
+    /*Toggle Travelers*/
+    /*Profile Airports*/
+    /*Row Travelers Users Block*/
+    /*Item Profile Title*/ }
+    .right-side .profile-title, .right-side .profile-title.previous-trips {
+      padding: 30px 60px 30px 0;
+      font-size: 24px;
+      line-height: 28px; }
+    .right-side .profile-wrapper {
+      padding-right: 40px; }
+    .right-side .profile-user {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .right-side .profile-user .left-block .item-1, .right-side .profile-user .left-block .item-2 {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 40px; }
+    .right-side .profile-edit {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .right-side .profile-edit .item-profile-image {
+        margin-bottom: 20px; }
+    .right-side .travelers-add .add-new-traveler {
+      padding-bottom: 40px; }
+    .right-side .toggle-travelers {
+      padding-bottom: 30px; }
+      .right-side .toggle-travelers .item-profile-image {
+        width: 132px;
+        height: 132px; }
+    .right-side .profile-airports {
+      /*Profile status*/
+      /*Profile Passengers*/
+      /*Profile Links*/ }
+      .right-side .profile-airports .profile-status {
+        clear: both;
+        float: right;
+        padding: 25px 0 0 0; }
+      .right-side .profile-airports .profile-passengers {
+        clear: none; }
+      .right-side .profile-airports .profile-links {
+        clear: both;
+        padding: 25px 0 0 0; }
+    .right-side .travelers-users-block {
+      /*Travelers User Column*/
+      /*Travelers List Column*/ }
+      .right-side .travelers-users-block .travelers-column-title {
+        padding: 40px 0;
+        font-size: 21px;
+        line-height: 25px; }
+      .right-side .travelers-users-block .travelers-user-column {
+        width: 55%;
+        padding-left: 45px; }
+        .right-side .travelers-users-block .travelers-user-column .edit-information, .right-side .travelers-users-block .travelers-user-column .delete-information {
+          width: 245px;
+          margin: 10px 0 0 0; }
+        .right-side .travelers-users-block .travelers-user-column .delete-information {
+          margin-bottom: 40px; }
+      .right-side .travelers-users-block .travelers-list-column {
+        width: 45%; }
+        .right-side .travelers-users-block .travelers-list-column li {
+          margin: 0 50px 10px 0; }
+    .right-side .item-profile-title {
+      font-size: 24px;
+      line-height: 28px; }
+
+  /*Footer*/
+  .footer .bottom-menu {
+    padding: 32px 15px 58px; } }
+@media (max-width: 1279px) {
+  .container {
+    max-width: 768px;
+    padding: 0 9px; }
+
+  .profile-checkbox {
+    margin: 30px 0 0 25px; }
+
+  /*Header*/
+  .header {
+    padding-top: 10px;
+    line-height: normal; }
+    .header .header-left {
+      z-index: 3; }
+    .header .header-adaptive {
+      display: block; }
+    .header .header-adaptive-left {
+      float: left; }
+    .header .header-adaptive-right {
+      float: right; }
+    .header .header-phone, .header .header-right {
+      display: none; }
+    .header .header-logo, .header .header-arrow-icon {
+      display: inline-block; }
+    .header .header-logo {
+      padding-left: 20px; }
+      .header .header-logo img {
+        width: 36px; }
+    .header .menu-adaptive-icon {
+      padding-right: 20px; }
+
+  /*Left Side*/
+  .left-side {
+    display: none; }
+
+  /*Right Side*/
+  .right-side {
+    margin-top: -20px;
+    /*Profile Icon*/
+    /*Profile Title*/
+    /*Profile User*/
+    /*Profile Edit*/
+    /*Add Travelers */
+    /*Toggle Travelers*/
+    /*Profile Airports*/
+    /*Row Travelers Users Block*/ }
+    .right-side .profile-icon a {
+      display: none; }
+    .right-side .profile-title, .right-side .profile-title.previous-trips {
+      font-size: 18px;
+      line-height: 21px; }
+      .right-side .profile-title span, .right-side .profile-title.previous-trips span {
+        padding-top: 0;
+        font-size: 12px;
+        line-height: 21px; }
+    .right-side .profile-title.user {
+      display: flex;
+      position: relative;
+      padding: 30px 10px 10px 0;
+      border-bottom: 6px solid #F9F9F9; }
+      .right-side .profile-title.user .profile-icon.title a {
+        display: inline-block; }
+      .right-side .profile-title.user .title-first {
+        display: block; }
+      .right-side .profile-title.user .title-second {
+        display: none; }
+      .right-side .profile-title.user span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #7B8A8F;
+        font-size: 9px; }
+    .right-side .profile-wrapper {
+      padding-right: 20px; }
+    .right-side .profile-user .left-block .item-profile-title {
+      display: none; }
+    .right-side .profile-edit .item-profile-title {
+      display: none; }
+    .right-side .profile-edit .item-profile-image {
+      float: left; }
+    .right-side .profile-edit .btn.save-changes, .right-side .profile-edit .btn.delete {
+      font-size: 12px; }
+    .right-side .travelers-add .add-new-traveler {
+      padding-bottom: 30px; }
+    .right-side .toggle-travelers {
+      padding-bottom: 20px; }
+      .right-side .toggle-travelers .item-profile-image {
+        width: 150px;
+        height: 150px; }
+    .right-side .profile-airports {
+      font-size: 12px;
+      line-height: 14px;
+      /*Profile status*/ }
+      .right-side .profile-airports .profile-airport-name {
+        font-size: 15px;
+        line-height: 18px; }
+      .right-side .profile-airports .profile-status span {
+        font-size: 15px; }
+    .right-side .travelers-users-block {
+      /*Travelers User Column*/
+      /*Travelers List Column*/ }
+      .right-side .travelers-users-block .travelers-column-title {
+        font-size: 18px;
+        line-height: 21px; }
+      .right-side .travelers-users-block .travelers-user-column {
+        width: 50%; }
+        .right-side .travelers-users-block .travelers-user-column .item-title {
+          font-size: 12px;
+          line-height: 14px; }
+        .right-side .travelers-users-block .travelers-user-column .item-text {
+          font-size: 15px;
+          margin-bottom: 5px; }
+        .right-side .travelers-users-block .travelers-user-column .edit-information, .right-side .travelers-users-block .travelers-user-column .delete-information {
+          font-size: 12px; }
+      .right-side .travelers-users-block .travelers-list-column {
+        width: 50%; }
+        .right-side .travelers-users-block .travelers-list-column li {
+          margin: 0 30px 10px 0; }
+
+  /*Footer*/
+  .footer .bottom-menu {
+    display: none; }
+  .footer .after-bottom-menu {
+    display: block;
+    padding: 10px 9px 30px;
+    color: #686868;
+    font-size: 9px;
+    line-height: 11px; }
+  .footer .confirm-copyright {
+    float: left; }
+  .footer .confirm-made-with {
+    float: right; } }
+@media (max-width: 767px) {
+  .container {
+    max-width: 320px;
+    padding: 0 8px; }
+
+  .form-control {
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    background: #FBFBFB;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px; }
+
+  .profile-checkbox {
+    margin: 0 auto; }
+
+  /*Right Side*/
+  .right-side {
+    /*Profile Title*/
+    /*Profile User*/
+    /*Profile Edit*/
+    /*Add Travelers */
+    /*Toggle Travelers*/
+    /*Profile Airports*/
+    /*Row Travelers Users Block*/ }
+    .right-side .profile-title, .right-side .profile-title.previous-trips {
+      padding: 15px 20px;
+      font-size: 15px;
+      line-height: 18px;
+      border-bottom: 1px solid #F3F3F3; }
+      .right-side .profile-title span, .right-side .profile-title.previous-trips span {
+        display: none; }
+      .right-side .profile-title .profile-title-travelers-close, .right-side .profile-title.previous-trips .profile-title-travelers-close {
+        margin-top: 0;
+        font-size: 12px; }
+    .right-side .profile-title.user {
+      padding: 30px 20px 15px; }
+      .right-side .profile-title.user .profile-icon.title, .right-side .profile-title.user .title-first {
+        display: none; }
+      .right-side .profile-title.user .title-second {
+        display: block;
+        padding-left: 25px;
+        background: url("../images/menu_user.png") no-repeat left; }
+    .right-side .profile-wrapper {
+      padding-right: 0; }
+    .right-side .profile-wrapper, .right-side .profile-wrapper.trips {
+      margin-bottom: 0; }
+    .right-side .travelers-add.profile-wrapper {
+      border-top: 1px solid #F3F3F3; }
+    .right-side .profile-wrapper.trips {
+      border-bottom: 2px solid #F9F9F9; }
+    .right-side .profile-wrapper.trips:last-child {
+      margin-bottom: 0;
+      border-bottom: none; }
+    .right-side .profile-user {
+      padding: 15px; }
+      .right-side .profile-user .left-block .item-profile-title {
+        display: block;
+        float: left;
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 18px; }
+        .right-side .profile-user .left-block .item-profile-title span {
+          padding-top: 0;
+          color: #7B8A8F;
+          font-size: 9px; }
+      .right-side .profile-user .left-block .item-profile-image {
+        display: block;
+        float: right;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px; }
+      .right-side .profile-user .left-block .item-1, .right-side .profile-user .left-block .item-2 {
+        clear: both;
+        margin-bottom: 30px;
+        font-size: 12px; }
+        .right-side .profile-user .left-block .item-1 .item-title, .right-side .profile-user .left-block .item-2 .item-title {
+          margin-right: 20px; }
+      .right-side .profile-user .right-block {
+        display: none; }
+      .right-side .profile-user .edit-profile {
+        text-align: center;
+        padding-top: 15px;
+        border-top: 1px solid #F3F3F3; }
+        .right-side .profile-user .edit-profile a {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          text-transform: uppercase;
+          border-bottom: none; }
+    .right-side .profile-edit {
+      padding: 15px; }
+      .right-side .profile-edit .item-profile-title {
+        display: block;
+        font-size: 15px;
+        line-height: 18px; }
+        .right-side .profile-edit .item-profile-title span {
+          padding-top: 0;
+          font-size: 9px; }
+      .right-side .profile-edit .item-profile-image {
+        float: right;
+        width: 100px;
+        height: 100px; }
+      .right-side .profile-edit .cancel-editing a {
+        font-size: 12px;
+        line-height: 14px; }
+    .right-side .travelers-add-pre-text {
+      display: flex;
+      padding: 15px;
+      font-size: 15px;
+      line-height: 18px; }
+    .right-side .travelers-add {
+      text-align: center; }
+      .right-side .travelers-add .add-new-traveler {
+        padding: 20px 0;
+        font-size: 12px;
+        line-height: 14px; }
+        .right-side .travelers-add .add-new-traveler span {
+          vertical-align: top;
+          width: auto;
+          height: 9px;
+          margin-right: 10px;
+          text-indent: 1px;
+          background: none; }
+    .right-side .toggle-travelers {
+      padding: 15px; }
+      .right-side .toggle-travelers .item-profile-image {
+        float: none;
+        width: 132px;
+        height: 132px;
+        margin: 0 auto; }
+      .right-side .toggle-travelers .block-2 {
+        padding-top: 20px; }
+        .right-side .toggle-travelers .block-2 .btn.create-traveler {
+          font-size: 12px; }
+    .right-side .profile-airports {
+      padding: 15px 25px;
+      font-size: 9px;
+      line-height: 11px;
+      border: none;
+      /*Profile Passengers*/
+      /*Profile Price*/
+      /*Profile status*/
+      /*Profile Flight Details*/ }
+      .right-side .profile-airports .profile-first-airport .profile-airport-name:after {
+        width: 110px;
+        margin: 0 20px; }
+      .right-side .profile-airports .profile-airport-name {
+        margin-bottom: 0;
+        font-size: 15px;
+        line-height: 18px; }
+      .right-side .profile-airports .profile-passengers {
+        float: left;
+        padding-top: 15px; }
+      .right-side .profile-airports .profile-price {
+        float: left;
+        padding-top: 15px;
+        font-size: 15px;
+        line-height: 18px; }
+      .right-side .profile-airports .profile-status {
+        clear: none;
+        padding-top: 15px;
+        line-height: 18px; }
+        .right-side .profile-airports .profile-status span {
+          font-size: 12px; }
+      .right-side .profile-airports .profile-links {
+        display: none; }
+      .right-side .profile-airports .profile-flight-details {
+        clear: both;
+        padding-top: 15px; }
+    .right-side .travelers-users-block {
+      padding: 0 15px;
+      /*Travelers Adaptive Title*/
+      /*Travelers User Column*/
+      /*Travelers List Column*/ }
+      .right-side .travelers-users-block .travelers-adaptive-title {
+        display: block;
+        padding: 15px 0;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        border-bottom: 1px solid #F3F3F3; }
+      .right-side .travelers-users-block .travelers-column-title {
+        padding: 0;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 56px;
+        border-bottom: 1px solid #F3F3F3; }
+        .right-side .travelers-users-block .travelers-column-title img {
+          display: block;
+          float: right;
+          margin-top: 10px;
+          max-width: 36px;
+          max-height: 36px; }
+      .right-side .travelers-users-block .travelers-user-column {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 0;
+        border: none; }
+        .right-side .travelers-users-block .travelers-user-column .travelers-user-column-wrapper {
+          display: none;
+          margin-top: 10px;
+          border-bottom: 1px solid #F3F3F3; }
+        .right-side .travelers-users-block .travelers-user-column .item-title {
+          font-size: 9px;
+          line-height: 11px; }
+        .right-side .travelers-users-block .travelers-user-column .item-text {
+          font-size: 15px;
+          line-height: 24px; }
+        .right-side .travelers-users-block .travelers-user-column .edit-information, .right-side .travelers-users-block .travelers-user-column .delete-information {
+          width: 100%; }
+        .right-side .travelers-users-block .travelers-user-column .delete-information {
+          margin-bottom: 30px; }
+      .right-side .travelers-users-block .travelers-list-column {
+        float: none;
+        width: 100%; }
+        .right-side .travelers-users-block .travelers-list-column .travelers-column-title, .right-side .travelers-users-block .travelers-list-column ul {
+          display: none; }
+        .right-side .travelers-users-block .travelers-list-column .add-new-traveler {
+          text-align: center;
+          width: 100%;
+          padding: 20px 0;
+          font-size: 12px;
+          line-height: 14px;
+          border-top: 1px solid #F3F3F3; }
+          .right-side .travelers-users-block .travelers-list-column .add-new-traveler span {
+            vertical-align: top;
+            width: auto;
+            height: 9px;
+            margin-right: 10px;
+            text-indent: 1px;
+            background: none; }
+    .right-side .toggle-travelers-close {
+      margin: 0 0 10px;
+      font-size: 12px; }
+
+  /*Footer*/
+  .footer .bottom-menu {
+    display: none; }
+  .footer .after-bottom-menu {
+    padding: 10px 0 30px; } }
+
+/*# sourceMappingURL=adaptive-my-profile.css.map */
